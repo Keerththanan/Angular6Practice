@@ -6,13 +6,13 @@
 
 <h2>
   Click true to show some elements and false to clear it <br>
-  <button (click)="booleanValue = 'true'">TRUE</button>
-  <button (click)="booleanValue = 'false'">FALSE</button> <br>
+  <button (click)="booleanValue = true">TRUE</button>
+  <button (click)="booleanValue = false">FALSE</button> <br>
 
-  <div *ngIf="booleanValue == 'true'">
+  <div *ngIf="booleanValue == true">
     You have clicked TRUE...!
   </div>
-  <div *ngIf="booleanValue == 'false'">
+  <div *ngIf="booleanValue == false">
     You have clicked FALSE...!
   </div>
 
