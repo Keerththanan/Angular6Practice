@@ -1,0 +1,17 @@
+<h2>
+  Binded data: {{data}}
+  <br>
+  <!-- Use ngModel for two way binding -->
+  <input type="text" [(ngModel)]="inputData"> 
+  <br>
+  <br>
+  {{inputData}}
+  <br>
+
+  <!-- Event bindings -->
+  <button (click) = "onClick()">ClickME</button>
+  {{hello}}
+  <button (click) = "clearMe()">ClearMe</button>
+
+  
+</h2>

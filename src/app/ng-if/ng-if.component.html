@@ -1,0 +1,33 @@
+<!-- Basic ngIf, Change the booleanValue in the property and see. -->
+<h2 *ngIf="true">
+  Hello Kitty!
+</h2>
+
+
+<h2>
+  Click true to show some elements and false to clear it <br>
+  <button (click)="booleanValue = 'true'">TRUE</button>
+  <button (click)="booleanValue = 'false'">FALSE</button> <br>
+
+  <div *ngIf="booleanValue == 'true'">
+    You have clicked TRUE...!
+  </div>
+  <div *ngIf="booleanValue == 'false'">
+    You have clicked FALSE...!
+  </div>
+
+</h2>
+
+<!-- Using ng-template tag -->
+<button (click)="ifElseBoolean = 'true'">IF</button>
+<button (click)="ifElseBoolean = 'false'">ELSE</button> <br>
+<div *ngIf="ifElseBoolean == 'true'; then thenBlock; else elseBlock">
+</div>
+
+<ng-template #thenBlock>
+  <h2>This is then block</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>This is else block</h2>
+</ng-template>
