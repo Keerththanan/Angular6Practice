@@ -1,0 +1,21 @@
+<!-- app.componet.html has a verygood example for ng-switch -->
+Type a color here(red/blue/orange): <input type="text" [(ngModel)]="case" [style.color]="'green'"> <br>
+
+Your choice is
+<div [ngSwitch]="case">
+  <div *ngSwitchCase="'blue'">
+    <div [style.color]="'blue'">BLUE</div>
+  </div>
+
+  <div *ngSwitchCase="'red'">
+    <div [style.color]="'red'">RED</div>
+  </div>
+
+  <div *ngSwitchCase="'orange'">
+      <div [style.color]="'orange'">ORANGE</div>
+  </div>
+
+  <div *ngSwitchDefault>
+      <div [style.color]="'green'">Choose a color</div>
+  </div>
+</div>

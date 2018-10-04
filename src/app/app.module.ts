@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { InLineComponent } from './in-line/in-line.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     InLineComponent,
     DataBindingComponent,
     NgIfComponent,
+    NgSwitchComponent,
   ],
   imports: [
     BrowserModule,
