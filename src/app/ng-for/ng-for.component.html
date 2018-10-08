@@ -1,0 +1,22 @@
+<!-- in the *ngFor = "let --- of ---" let and of are keywords -->
+
+<div *ngFor="let color of colors; odd as i">
+  <h2>{{color}}</h2>
+</div>
+
+<button (click)="i = i - 1">CHANGE COLOR -</button>
+<h2>{{colors[i]}}</h2>
+<button (click)="i = i + 1">CHANGE COLOR +</button>
+
+
+<!-- <button ng-click="count = count + 1" ng-init="count = 0">Click</button>
+{{count}}
+    {{testArray[3]}}  -->
+
+<p>Click the button:</p>
+
+<button (click)="count = count - 1">-</button>
+<button (click)="count = count + 1">+</button>
+
+
+<h2>The element in index {{count}} is {{testArray[count]}}</h2>
