@@ -23,7 +23,7 @@
 
   <div *ngSwitchCase="'app-component-interaction'">
     <app-component-interaction (childData)="message=$event" [parentName]="name"></app-component-interaction>
-    
+    <h2>{{message}}</h2>
   </div>
 
   <div *ngSwitchCase="''">
@@ -38,7 +38,5 @@
 
    -->
 </div>
-
-{{message}}
 
 <router-outlet></router-outlet>
