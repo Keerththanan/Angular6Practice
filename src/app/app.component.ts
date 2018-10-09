@@ -9,5 +9,7 @@ export class AppComponent {
   //Data property of the app.component.html
   testData = 'app-component-interaction';
   name = "Kitty";
+
+  message="";
   
 }

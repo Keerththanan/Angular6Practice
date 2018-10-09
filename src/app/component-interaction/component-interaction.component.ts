@@ -9,6 +9,7 @@ export class ComponentInteractionComponent implements OnInit {
 
   @Input('parentName') name;
   @Output() childData = new EventEmitter();
+  childMessage="";
 
   constructor() { }
 
@@ -16,7 +17,7 @@ export class ComponentInteractionComponent implements OnInit {
   }
 
   injectEvent() {
-    this.childData.emit("This message came from child component");
+    this.childData.emit(this.childMessage);
   }
 
 }

@@ -1,24 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div [ngSwitch]="testData">
+
   <div *ngSwitchCase="'app-in-line'">
     <app-in-line></app-in-line>
   </div>
+
   <div *ngSwitchCase="'app-data-binding'">
     <app-data-binding></app-data-binding>
   </div>
+
   <div *ngSwitchCase="'app-ng-if'">
     <app-ng-if></app-ng-if>
   </div>
+
   <div *ngSwitchCase="'app-ng-switch'">
     <app-ng-switch></app-ng-switch>
   </div>
+
   <div *ngSwitchCase="'app-ng-for'">
     <app-ng-for></app-ng-for>
   </div>
+
   <div *ngSwitchCase="'app-component-interaction'">
     <app-component-interaction (childData)="message=$event" [parentName]="name"></app-component-interaction>
-    {{message}}  
+    
   </div>
+
   <div *ngSwitchCase="''">
 
   </div>
@@ -32,5 +39,6 @@
    -->
 </div>
 
+{{message}}
 
 <router-outlet></router-outlet>
