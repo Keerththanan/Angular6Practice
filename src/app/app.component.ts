@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //Data property of the app.component.html
-  testData = 'app-pipes';
+  testData = 'app-employee-list';
   name = "Kitty";
 
   message="";
